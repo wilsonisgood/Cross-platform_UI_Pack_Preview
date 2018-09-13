@@ -1,0 +1,80 @@
+.laydateArea .layui-laydate .layui-this{
+  border-radius:999px;
+  background:#3ea4ff !important;
+}
+
+.laydateArea{
+  padding:0 15px;
+  margin-bottom:10px;
+}
+.laydateArea .layui-laydate,
+.laydateArea .layui-laydate-hint{
+  width:100%;
+  border:0 none;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  box-shadow:2px 2px 15px rgba(0, 0, 0, 0.12);
+}
+.laydateArea .layui-laydate-main{
+  width:100%;
+}
+.laydateArea .layui-laydate-main .layui-laydate-header{
+  background:#3ea4ff;
+  border-bottom:0 none;
+}
+.laydateArea .layui-laydate-main .layui-laydate-header .laydate-set-ym,
+.laydateArea .layui-laydate-main .layui-laydate-header i{
+  color:#fff;
+}
+.laydateArea .layui-laydate-main .layui-laydate-content table{
+  width:100%;
+}
+/* .laydateArea .layui-laydate-main .layui-laydate-content td,
+.laydateArea .layui-laydate-main .layui-laydate-content th{
+  width:14%;
+} */
+
+
+.laydateArea .layui-laydate .layui-this{
+	/* 選中日期灌底色區塊 */
+	border-radius:5px;
+  background:#3ea4ff !important;
+}
+.laydateArea .layui-this .laydate-day-dutyMarks,
+.laydateArea .layui-this .laydate-day-applicationMarks{
+  color:#fff;
+}
+.layui-laydate-header i.laydate-prev-y,
+.layui-laydate-header i.laydate-next-y{
+  display:none !important;
+}
+
+
+
+.laydate-day-dutyMarks,
+.laydate-day-applicationMarks{
+  font-size:1em !important;
+  color:#3ea4ff;
+}
+.laydate-day-dutyMarks{
+  top:1px !important;
+}
+/* .laydate-day-dutyMarks::after{
+  background-color:transparent !important;
+} */
+
+.laydate-day-applicationMarks:after{
+  font-size:1em !important;
+  color:#3ea4ff;
+  position:absolute;
+  content:'';
+  left:50%;
+  margin-left:-3px;
+  bottom:1px;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:red !important;
+}
+/*覆蓋 laydate 自己對於 mark 設定的綠點*/
+.laydate-day-mark::after{background-color: transparent;}

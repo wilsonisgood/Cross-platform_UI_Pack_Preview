@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 漸層背景色*/
+.bg-blue{
+  background: #2fdafd; /* Old browsers */
+  background: -moz-linear-gradient(left, #f55 0%,#fa0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,#f55 0%,#fa0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #f55 0%, #fa0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* background: -moz-linear-gradient(left, #2fdafd 0%,#3abdff 100%); /* FF3.6-15 */
+  /* background: -webkit-linear-gradient(left,#2fdafd 0%,#3abdff 100%); Chrome10-25,Safari5.1-6 */
+  /* background: linear-gradient(to right, #2fdafd 0%, #3abdff 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ */
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#2fdafd",
+      endColorstr="#3abdff",
+      GradientType=1
+    ); /* IE6-9 */
+}
+
+/* 按鈕 - 通用樣式*/
+.btn{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-progress-appearance: none;
+  appearance: none;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* 按鈕 - md */
+.btn-md{
+  font-size: 15px;
+  height: 50px;
+  width: 134px;
+}
+
+/* 按鈕 - lg */
+.btn-lg{
+  font-size: 18px;
+  height: 44px;
+  width: 250px;
+}
+
+/* 标题前面蓝色小直线 */
+.title-icon {
+  height: 15px;
+  background: url("../../src/assets/img/common/title_before@2x.png") no-repeat;
+  background-size: 4.5px 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 15px;
+  padding-left: 11.5px;
+  color: #666666;
+}
+
+/* 照片區塊 */
+.photo-area {
+  padding-top: 10px;
+  height: fit-content;
+}
+
+.photo-area .photo-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  height: 70px;
+  margin: 4px;
+  background: url("../../src/assets/img/common/add_photo@2x.png") no-repeat;
+  background-size: 70px;
+}
+
+/* 資料排版 */
+.list-ul {
+  padding-left: 7%;
+}
+
+.list-ul, li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.list-ul li {
+  height: 14px;
+}
+
+.list-ul li:nth-child(2n + 1) {
+  color: #666666;
+}
+
+.list-ul li:nth-child(2n) {
+  color: #333333;
+}
+
+/* 下拉选单 */
+/* 下拉选单 被选中样式*/
+.select-selected {
+  background: url("../../src/assets/img/common/select_bg@2x.png") no-repeat;
+  background-size: 250px 30px;
+  line-height: 30px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+}
+
+/* 下拉选单 (options):*/
+.select-items {
+  position: absolute;
+  background-color: #ffffff;
+  /* top: 100%; */
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* 下拉选单 (options): */
+.select-items div {
+  color: black;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  background: url("../../src/assets/img/common/re_line_cutoff_short.png") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+
+/* 关闭下拉选单 */
+.select-hide {
+  display: none;
+}
+
+/* 導航欄下文字區塊*/
+.top-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.top-text img {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 3px;
+}
+
+.top-text span {
+  font-size: 14px;
+  display: inline-block;
+  height: 14px;
+  vertical-align: text-top;
+  color: #3abdff;
+}
+
+.sfa-system-text-blue {
+  color: #3abdff;
+}
+
+.sfa-system-bg-blue {
+  background: #3abdff;
+}
+
+/*  移除移動端樣式 */
+button, button:active, input, input:focus {
+  outline: none;
+}
+
+/*  移除移動端預設樣式 */
+textarea, input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* 提示彈窗 - 修改樣式 */
+.vux-confirm .vux-x-dialog > .weui-dialog,
+.vux-alert .vux-x-dialog > .weui-dialog,{
+  border-radius: 5px;
+}
+
+.vux-confirm .vux-x-dialog > .weui-dialog > .weui-dialog__title,
+.vux-alert .vux-x-dialog > .weui-dialog > .weui-dialog__title {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 800;
+}
+
+.vux-confirm .vux-x-dialog > .weui-dialog > .weui-dialog__bd,
+.vux-alert .vux-x-dialog > .weui-dialog > .weui-dialog__bd {
+  font-size: 16px;
+  color: #666666;
+  line-height: 2;
+}
+
+.vux-confirm .vux-x-dialog > .weui-dialog > .weui-dialog__ft a,
+.vux-alert .vux-x-dialog > .weui-dialog > .weui-dialog__ft a {
+  color: #3ea4ff;
+}
